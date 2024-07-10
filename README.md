@@ -10,7 +10,7 @@ Bind mount icecast.xml configuration file to /tmp/icecast.xml inside container.
 Run container example:  
 ```
 docker run -d --name icecast \
--p 8080:80 -p 8000:8000 \
+-p 8000:8000 \
 -v "$(pwd)"/icecast.xml:/tmp/icecast.xml \
 -v "$(pwd)"/access.log:/tmp/access.log:rw \
 -v "$(pwd)"/error.log:/tmp/error.log:rw \
